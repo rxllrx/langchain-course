@@ -1,0 +1,28 @@
+[project]
+name = "langgraph-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rxllrx", email = "hloveme1234@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.5.0",
+    "langchain-openai>=1.7.4",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.21",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langgraph-course = "main:main"
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "nodes", "react"]
